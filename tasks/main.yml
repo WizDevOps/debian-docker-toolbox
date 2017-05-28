@@ -1,0 +1,9 @@
+---
+# tasks file for debian-docker-toolbox
+
+- include: engine-install.yml
+
+- include: compose-install.yml
+
+- include: machine-install.yml
+

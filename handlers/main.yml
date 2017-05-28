@@ -1,0 +1,17 @@
+---
+# handlers file for debian-docker-toolbox
+
+- name: restart docker
+  become: true
+  become_method: sudo
+  service:
+    name: docker
+    state: restarted
+
+- name: reload docker
+  become: true
+  become_method: sudo
+  service:
+    name: docker
+    state: reloaded
+
