@@ -14,13 +14,7 @@
     - ca-certificates
     - curl
     - software-properties-common
-
-- name: install pip the safe way
-  become: true
-  become_method: sudo
-  easy_install:
-    name: pip
-    state: present
+    - python2-pip
 
 - name: ensure docker python lib is present
   become: true
