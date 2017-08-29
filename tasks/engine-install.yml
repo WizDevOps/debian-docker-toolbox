@@ -30,6 +30,12 @@
     name: docker
     state: latest
 
+- name: add docker official GPG key
+  become: true
+  apt_key:
+    url: "{{ docker_apt_url }}/gpg"
+    state: present
+
 - name: add apt repository
   become: true
   become_method: sudo
