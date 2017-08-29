@@ -1,6 +1,6 @@
 ---
 # vars file for debian-docker-toolbox
-docker_machine_version: '0.11.0'
-docker_machine_checksum: 'sha256:71de3ce0c2233f9fbc2ca7e359ff29711e3fb078d9c7b808a771a2bcaa24f729'
+docker_machine_version: '0.12.2'
+docker_machine_checksum: 'sha256:3c0a1a03653dff205f27bb178773f3c294319435a2589cf3cb4456423f8cef08'
 
 docker_apt_url: 'https://download.docker.com/linux/debian'

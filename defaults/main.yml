@@ -1,5 +1,5 @@
 ---
 # defaults file for debian-docker-toolbox
-docker_compose_version: '1.12.0'
+docker_compose_version: '1.15.0'
 
 docker_repo: edge
