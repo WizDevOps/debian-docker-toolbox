@@ -36,6 +36,7 @@
   apt_repository:
     repo: "deb [arch=amd64] {{ docker_apt_url }} {{ ansible_distribution_release }} {{ docker_repo }}"
     state: present
+    filename: docker
     update_cache: true
 
 - name: ensure there was no previous Docker Engine installed
