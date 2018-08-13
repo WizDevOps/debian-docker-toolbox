@@ -59,11 +59,20 @@
   become: true
   become_method: sudo
   apt:
-    package: docker-ce
-    state: latest
+    package: "docker-ce={{ docker_ce_version }}"
+    state: present
     update_cache: true
     cache_valid_time: 3600
     force: true
+
+- name: TEMPLATE | Configure the Docker daemon
+  become: true
+  template:
+    src: daemon.json.j2
+    dest: /etc/docker/daemon.json
+    owner: root
+    group: root
+    mode: 0600
 
 - name: add user to docker group
   become: true
